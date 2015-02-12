@@ -21,10 +21,33 @@
 
         
       = yield
+      
+      .get_in_touch      
+        .row
+          .col-md-12
+            %h2.text-center.text-uppercase
+              Get in touch
+
+            %p.text-center
+              Let's chat about engaging your Next Billion customers.
+
+        .row
+          .col-md-3.text-center
+            %img{:src=>"images/socialmedia_mail.png"}
+
+          .col-md-3.text-center
+            %img{:src=>"images/socialmedia_linkedin.png"}
+
+          .col-md-3.text-center
+            %img{:src=>"images/socialmedia_facebook.png"}
+
+          .col-md-3.text-center
+            %img{:src=>"images/socialmedia_twitter.png"}
 
       .footer
         .row
           .col-md-12
             %p.text-center
               Copyright © Next Billion Pte Ltd - a Newton Circus company
+              
     
