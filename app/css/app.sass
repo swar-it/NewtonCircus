@@ -2,23 +2,45 @@
 *
   font-family: Ubuntu
 
+// helpers
 .vertical-align
   align-items: center
-  flex-direction: row-reverse
   display: flex
+
+.reverse
+  flex-direction: row-reverse
   
 .equal
   display: flex
+
+.orange
+  background-color: #ee5920
+
+.no-border
+  border: 0
   
+.italic
+  font-style: italic
+
+.grey
+  background-color: #f1f1f1
+  
+.black
+  background-color: #363636
+  color: white
+
+// Centering the menu (vertically)
 nav.menu
   transform: translateY(50%)
   
 nav.menu a
   padding: 30px
 
-.orange
-  background-color: #ee5920
+// Color it
+.menu a
+  color: black
 
+// "Hack" for centering stuff "vertically"
 .banner
   background-image: url(../images/banner.png)
   background-size: cover
@@ -31,13 +53,12 @@ nav.menu a
   border-radius: 10px
   color: #ee5920
   font-weight: bold
-  
-.no-border
-  border: 0
-  
-.italic
-  font-style: italic
 
+.rural h2
+  transform: translateY(25%)
+
+  
+// Make the thumbnails equal
 .platforms img
   height: 100px
 
@@ -50,31 +71,34 @@ nav.menu a
 .press img
   height: 50px
 
-.grey
-  background-color: #f1f1f1
-  
-.black
-  background-color: #363636
-  color: white
-
-
-.platforms h3, .platforms h2, .approach h3, .approach h2, .the_next_billion h2
+// orange titles
+.platforms h3, .platforms h2, .approach h3, .approach h2, .the_next_billion h2, .rural h2, .rural_about h3
   color: #ee5920
   font-weight: bold
 
-.the_next_billion .row, .approach .row, .approach .thumbnail, .press .row, .press .thumbnail
+// grey background
+.the_next_billion .row, .approach .row, .approach .thumbnail, .press .row, .press .thumbnail, .rural .row
   background-color: #f1f1f1
-  
-h2, .footer p
+
+// Some space between stuff
+h2, .footer p, .rural_about h3, .rural_about img
   margin-top: 30px
   margin-bottom: 40px
 
 .the_next_billion h2
   margin-top: 0px
 
+.get_in_touch img
+  padding-bottom: 40px
+
+.thumbnail, .the_next_billion p
+  margin-bottom: 40px
+
+// Orange background
 .get_in_touch .row
   background-color: #ee5920
 
+// footer
 .get_in_touch h2
   font-weight: bold
   color: white
@@ -85,14 +109,4 @@ h2, .footer p
 
 .footer .row
   background-color: #363636
-
-.get_in_touch img
-  padding-bottom: 40px
-
-.thumbnail, .the_next_billion p
-  margin-bottom: 40px
-
-.menu a
-  color: black
  
-  

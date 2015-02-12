@@ -16,7 +16,7 @@ class App < Sinatra::Base
     haml :index
   end
 
-  get "/platforms/rural" do
+  get "/rural" do
     haml :rural
   end
 
